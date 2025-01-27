@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product List</title>
+<style>
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+#navbar a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+section {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%; 
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+#navbar_logo img{
+    width: 140px;
+    margin-left: 20px;
+}
+
+#navbar_links {
+    display: flex;
+    margin-left: 480px;
+}
+
+#navbar_links li {
+    margin-left: 50px;
+}
+
+#navbar_links a:hover{
+    color:orange;
+}
+
+#navbar_icons a{
+    display: flex;
+    place-items: center;
+    margin-right: 40px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px; 
+}
+
+.product-item {
+    background-color: #d9f2ff;
+    border-radius: 8px;
+    padding: 10px; 
+    box-shadow: 0 4px 6px #0000001a;
+    text-align: center;
+    margin-top: -90px;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 200px; 
+    object-fit: contain; 
+}
+
+.product-item h3 {
+    font-size: 18px; 
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.product-item button {
+    background-color: #2e79ba;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 35px;
+    border-style: none;
+}
+
+.category-name span{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.product-item a button:hover {
+    color: orange;
+}
+.category-name {
+    padding-top: 150px;
+}
+
+
+</style>
+
+</head>   
+    
+    <body>
+        <section>
+            <div id="navbar">
+                <div id="navbar_logo">
+                    <a href="../homepage.html">
+                        <img src="../Pictures/DJKT_PC.png" alt="DJKT_PC">
+                    </a>
+                </div>
+                <div id="navbar_links">
+                    <ul id="navibar">
+                        <li>
+                            <a href="../homepage.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="../products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="../about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="navbar_icons">
+                    <a class="bi bi-cart3" href="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="category-name">
+            <span>SSD</span>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="../Pictures/ProductsImage/SSD/SSD1-removebg-preview.png" alt="Sandisk SSD Plus SATA 3 2.5 1TB">
+                <h3>Sandisk SSD Plus SATA 3 2.5 1TB</h3>
+                <a href ="../Description/ssd.html"><button>Buy Now for 3,250 Pesos</button></a>
+            </div>
+           
+            <div class="product-item">
+               <img src="../Pictures/ProductsImage/SSD/SSD2-removebg-preview.png" alt="Samsung 870 Evo SSD 1TB SATA">
+                <h3>Samsung 870 Evo SSD 1TB SATA</h3>
+                <a href =""><button>Buy Now for 5,590 Pesos</button></a>
+                </div>
+           
+           <div class="product-item">
+                <img src="../Pictures/ProductsImage/SSD/SSD3-removebg-preview.png" alt="Kingston A400 SSD 240GB 2.5 Sata 3">
+                <h3>Kingston A400 SSD 240GB 2.5 Sata 3</h3>
+                <a href =""><button>Buy Now for 1,799 Pesos</button></a>
+           </div>
+
+           <div class="product-item">
+               <img src="../Pictures/ProductsImage/SSD/SSD4-removebg-preview.png" alt="Ramsta 256GB SSD 2.5 SATA-S800"> 
+                <h3>Ramsta 256GB SSD 2.5 SATA-S800</h3>
+                <a href =""><button>Buy Now for 1,195 Pesos</button></a>
+           </div>
+       
+           <div class="product-item">
+               <img src="../Pictures/ProductsImage/SSD/SSD5-removebg-preview.png" alt="WD Green 240GB 3D NAND 2.5 7MM">
+               <h3>WD Green 240GB 3D NAND 2.5 7MM </h3>
+               <a href =""><button>Buy Now for 1,829 Pesos</button></a>
+           </div>
+        </div>
+
+        </div>
+    </body>
+</html>

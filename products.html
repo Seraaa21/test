@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product List</title>
+<style>
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+#navbar a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+section {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%; 
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+#navbar_logo img{
+    width: 140px;
+    margin-left: 20px;
+}
+
+#navbar_links {
+    display: flex;
+    margin-left: 480px;
+}
+
+#navbar_links li {
+    margin-left: 50px;
+}
+
+#navbar_links a:hover{
+    color:orange;
+}
+
+#navbar_icons a{
+    display: flex;
+    place-items: center;
+    margin-right: 40px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px; 
+}
+
+.product-item {
+    background-color: #d9f2ff;
+    border-radius: 8px;
+    padding: 10px; 
+    box-shadow: 0 4px 6px #0000001a;
+    text-align: center;
+    margin-top: -90px;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 200px; 
+    object-fit: contain; 
+}
+
+.product-item h3 {
+    font-size: 18px; 
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.product-item button {
+    background-color: #2e79ba;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 35px;
+    border-style: none;
+}
+
+.category-name span{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.product-item a button:hover {
+    color: orange;
+}
+#product-container {
+    padding: 110px;
+}
+.product-item h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 300;
+    font-weight: 550;
+}
+
+
+</style>
+
+</head>   
+    
+    <body>
+        <section>
+            <div id="navbar">
+                <div id="navbar_logo">
+                    <a href="homepage.html">
+                        <img src="Pictures/DJKT_PC.png" alt="DJKT_PC">
+                    </a>
+                </div>
+                <div id="navbar_links">
+                    <ul id="navibar">
+                        <li>
+                            <a href="homepage.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="navbar_icons">
+                    <a class="bi bi-cart3" href="cart-icon" ><a href="Description/case.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                    </a>
+                    </a>
+                    </div>
+            </div>
+        </section>
+
+        <div id="product-container">  
+            <div class="category-name">
+             <span>Graphics Card</span>
+            <div class="product-list">
+                 <div class="product-item">
+                     <img src="Pictures/ProductsImage/GPU/GPU1-removebg-preview.png" alt="RX 580">
+                     <h3>RX 580 4GB</h3>
+                     <a href ="Description/gpu1.html"><button>Buy Now for 3,999 Pesos</button></a>
+                 </div>
+                
+                 <div class="product-item">
+                    <img src="Pictures/ProductsImage/GPU/GPU2-removebg-preview.png" alt="GTX 1050 ti">
+                     <h3>GTX 1050 ti 4GB</h3>
+                     <a href =""><button>Buy Now for 7,999 Pesos</button></a>
+                     </div>
+                
+                <div class="product-item">
+                     <img src="Pictures/ProductsImage/GPU/GPU3-removebg-preview.png" alt="RTX 4090">
+                     <h3>RTX 4090 24GB</h3>
+                     <a href =""><button>Buy Now for 114,990 Pesos</button></a>
+                </div>
+    
+                <div class="product-item">
+                    <img src="Pictures/ProductsImage/GPU/GPU4-removebg-preview.png" alt="RX 6600"> 
+                     <h3>RX 6600 8GB</h3>
+                     <a href =""><button>Buy Now for 13,599 Pesos</button></a>
+                </div>
+            
+                <div class="product-item">
+                    <img src="Pictures/ProductsImage/GPU/GPU5-removebg-preview.png" alt="RTX 3060">
+                    <h3>RTX 3060</h3>
+                    <a href =""><button>Buy Now for 22,999 Pesos</button></a>
+            </div>
+            </div>
+       
+             <div class="category-name">
+            <span>CPU</span>
+        
+             <div class="product-list">
+                <div class="product-item">
+                    <img src="Pictures/ProductsImage/CPU/CPU2-removebg-preview.png" alt="Intel® Core™ i5-12600K Processor">
+                    <h3>Intel® Core™ i5-12600K Processor</h3>
+                    <a href ="Description/cpu1.html"><button>Buy Now for 16,500 Pesos</button></a>
+                </div>
+               
+                <div class="product-item">
+                   <img src="Pictures/ProductsImage/CPU/CPU_1-removebg-preview.png" alt="AMD Ryzen 3 PRO 2100GE 3.2GHz">
+                    <h3>AMD RYZEN 3 PRO 2100GE 3.2GHz</h3>
+                    <a href =""><button>Buy Now for 6,699 Pesos</button></a>
+                    </div>
+               
+               <div class="product-item">
+                    <img src="Pictures/ProductsImage/CPU/CPU3-removebg-preview.png" alt="AMD Ryzen 5 5600 3.5 GHz">
+                    <h3>AMD Ryzen 5 5600 3.5 GHz</h3>
+                    <a href =""><button>Buy Now for 10,678 Pesos</button></a>
+               </div>
+   
+               <div class="product-item">
+                   <img src="Pictures/ProductsImage/CPU/CPU4-removebg-preview.png" alt="AMD Ryzen 7 5700X 3.4 GHz"> 
+                    <h3>AMD Ryzen 7 5700X 3.4 GHz</h3>
+                    <a href =""><button>Buy Now for 13,381 Pesos</button></a>
+               </div>
+           
+               <div class="product-item">
+                   <img src="Pictures/ProductsImage/CPU/CPU5-removebg-preview.png" alt="Intel® Core™ i3-12100 Processor">
+                   <h3>Intel® Core™ i3-12100 Processor</h3>
+                   <a href =""><button>Buy Now for 8,195 Pesos</button></a>
+           </div>
+            </div>
+
+            <div class="category-name">
+            <span>Monitor</span>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="Pictures/ProductsImage/MONITOR/MNTR1-removebg-preview.png" alt="NVISION 24inches Black 100HZ IPS">
+                <h3>NVISION 24inches Black 100HZ IPS </h3>
+                <a href ="Description/monitor.html"><button>Buy Now for 4,500 Pesos</button></a>
+            </div>
+           
+            <div class="product-item">
+               <img src="Pictures/ProductsImage/MONITOR/MNTR2-removebg-preview.png" alt="NVISION 24inches White 100HZ IPS">
+                <h3>NVISION 24inches White 100HZ IPS</h3>
+                <a href ="Description/monitor2.html"><button>Buy Now for 5,999 Pesos</button></a>
+                </div>
+           
+           <div class="product-item">
+                <img src="Pictures/ProductsImage/MONITOR/MNTR3-removebg-preview.png" alt="NZXT Canvas 32inches Curved 165Hz">
+                <h3>NZXT Canvas 32inches Curved 165Hz</h3>
+                <a href =""><button>Buy Now for 19,990 Pesos</button></a>
+           </div>
+
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/MONITOR/MNTR4-removebg-preview.png" alt="MSI Curved 31.5inches Gaming Monitor"> 
+                <h3>MSI Curved 31.5inches Gaming Monitor</h3>
+                <a href =""><button>Buy Now for 26,599 Pesos</button></a>
+           </div>
+       
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/MONITOR/MNTR5-removebg-preview.png" alt="LG 27inches Monitor 27MP400-B">
+               <h3>LG 27inches Monitor 27MP400-B</h3>
+               <a href =""><button>Buy Now for 10,990 Pesos</button></a>
+           </div>
+            </div>
+
+            <div class="category-name">
+            <span>RAM</span>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="Pictures/ProductsImage/RAM/RAM1-removebg-preview.png" alt="Kingston FURY Beast 8G 3200MT/s DDR4">
+                <h3>Kingston FURY Beast 8G 3200MT/s DDR4</h3>
+                <a href ="Description/ram.html"><button>Buy Now for 1,795 Pesos</button></a>
+            </div>
+           
+            <div class="product-item">
+               <img src="Pictures/ProductsImage/RAM/RAM4-removebg-preview.png" alt="Kingston DDR4 RAM Desktop 4GB 2666MHz">
+                <h3>Kingston DDR4 RAM Desktop 4GB</h3>
+                <a href =""><button>Buy Now for 440 Pesos</button></a>
+                </div>
+           
+           <div class="product-item">
+                <img src="Pictures/ProductsImage/RAM/RAM2-removebg-preview.png" alt="Kingston DDR4 RAM Desktop 8GB 3200MHz">
+                <h3>Kingston DDR4 RAM Desktop 8GB 3200MHz</h3>
+                <a href =""><button>Buy Now for 940 Pesos</button></a>
+           </div>
+
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/RAM/RAM3-removebg-preview.png" alt="Corsair Vengeance LPX 16GB DDR4 3200MHz"> 
+                <h3>Corsair Vengeance LPX 16GB DDR4 3200MHz</h3>
+                <a href =""><button>Buy Now for 2,720 Pesos</button></a>
+           </div>
+       
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/RAM/RAM5-removebg-preview.png" alt="Kingston HyperX FURY Desktop DDR4 8GB 2666MHz">
+               <h3>Kingston HyperX FURY DDR4 8GB 2666MHz</h3>
+               <a href =""><button>Buy Now for 1,278 Pesos</button></a>
+           </div>
+        </div>
+  
+        <div class="category-name">
+            <span>PC Case</span>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="Pictures/ProductsImage/CASE/CASE1-removebg-preview.png" alt="YGT Tempered Glass MATX Case White">
+                <h3>YGT Tempered Glass MATX Case White</h3>
+                <a href =""><button>Buy Now for 1,275 Pesos</button></a>
+            </div>
+           
+            <div class="product-item">
+               <img src="Pictures/ProductsImage/CASE/CASE3-removebg-preview.png" alt="Micro ATX Tempered Glass Front and Side">
+                <h3>Micro ATX Tempered Glass Front and Side</h3>
+                <a href =""><button>Buy Now for 1,395 Pesos</button></a>
+                </div>
+           
+           <div class="product-item">
+                <img src="Pictures/ProductsImage/CASE/CASE2-removebg-preview.png" alt="INPLAY Meta A200 Desktop Case with fan">
+                <h3>INPLAY Meta A200 Desktop Case with fan</h3>
+                <a href ="Description/case.html"><button>Buy Now for 1,198 Pesos</button></a>
+           </div>
+
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/CASE/CASE4-removebg-preview.png" alt="Darkflash DB330M Mesh MATX CASE"> 
+                <h3>Darkflash DB330M Mesh MATX CASE</h3>
+                <a href =""><button>Buy Now for 1,895 Pesos</button></a>
+           </div>
+       
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/CASE/CASE5-removebg-preview.png" alt="Cooler Master Elite 301 Lite Black/White ITX">
+               <h3>Cooler Master Elite 301 Lite Black/White ITX</h3>
+               <a href =""><button>Buy Now for 2,340 Pesos</button></a>
+           </div>
+        </div>
+
+        <div class="category-name">
+            <span>SSD</span>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="Pictures/ProductsImage/SSD/SSD1-removebg-preview.png" alt="Sandisk SSD Plus SATA 3 2.5 1TB">
+                <h3>Sandisk SSD Plus SATA 3 2.5 1TB</h3>
+                <a href ="Description/ssd.html"><button>Buy Now for 3,250 Pesos</button></a>
+            </div>
+           
+            <div class="product-item">
+               <img src="Pictures/ProductsImage/SSD/SSD2-removebg-preview.png" alt="Samsung 870 Evo SSD 1TB SATA">
+                <h3>Samsung 870 Evo SSD 1TB SATA</h3>
+                <a href =""><button>Buy Now for 5,590 Pesos</button></a>
+                </div>
+           
+           <div class="product-item">
+                <img src="Pictures/ProductsImage/SSD/SSD3-removebg-preview.png" alt="Kingston A400 SSD 240GB 2.5 Sata 3">
+                <h3>Kingston A400 SSD 240GB 2.5 Sata 3</h3>
+                <a href =""><button>Buy Now for 1,799 Pesos</button></a>
+           </div>
+
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/SSD/SSD4-removebg-preview.png" alt="Ramsta 256GB SSD 2.5 SATA-S800"> 
+                <h3>Ramsta 256GB SSD 2.5 SATA-S800</h3>
+                <a href =""><button>Buy Now for 1,195 Pesos</button></a>
+           </div>
+       
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/SSD/SSD5-removebg-preview.png" alt="WD Green 240GB 3D NAND 2.5 7MM">
+               <h3>WD Green 240GB 3D NAND 2.5 7MM </h3>
+               <a href =""><button>Buy Now for 1,829 Pesos</button></a>
+           </div>
+        </div>
+
+        <div class="category-name">
+            <span>Power Supply</span>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="Pictures/ProductsImage/PSU/PSU1-removebg-preview.png" alt="SFX 750W 80+ PLATINUM Full Modular">
+                <h3>SFX 750W PLATINUM 80+ Full Modular</h3>
+                <a href =""><button>Buy Now for 11,000 Pesos</button></a>
+            </div>
+           
+            <div class="product-item">
+               <img src="Pictures/ProductsImage/PSU/PSU2-removebg-preview.png" alt="CORSAIR AXi AX1600i 1600 Watt 80+ Titanium">
+                <h3>CORSAIR AXi AX1600i 1600 Watt 80+ Titanium</h3>
+                <a href =""><button>Buy Now for 35,599 Pesos</button></a>
+                </div>
+           
+           <div class="product-item">
+                <img src="Pictures/ProductsImage/PSU/PSU3-removebg-preview.png" alt="Corsair CX750 750-Watt 80 PLUS Bronze">
+                <h3>Corsair CX750 750-Watt 80 PLUS Bronze</h3>
+                <a href =""><button>Buy Now for 4,699 Pesos</button></a>
+           </div>
+
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/PSU/PSU4-removebg-preview.png" alt="AX860i Digital 860-Watt 80 PLUS Platinum"> 
+                <h3>AX860i Digital 860 Watt 80 PLUS Platinum</h3>
+                <a href ="Description/psu.html"><button>Buy Now for 19,999 Pesos</button></a>
+           </div>
+       
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/PSU/PSU5-removebg-preview.png" alt="RMx White RM750x 750-Watt 80 Gold">
+               <h3>RMx White RM750x 750-Watt 80 Gold</h3>
+               <a href ="Description/psu2.html"><button>Buy Now for 10,990 Pesos</button></a>
+           </div>
+        </div>
+
+        <div class="category-name">
+            <span>Motherboard</span>
+            <div class="product-list">
+            <div class="product-item">
+                <img src="Pictures/ProductsImage/MOBO/MOBO1-removebg-preview.png" alt="Asus AMD Prime A520M-K Motherboard">
+                <h3>Asus AMD Prime A520M-K Motherboard</h3>
+                <a href =""><button>Buy Now for 3,788 Pesos</button></a>
+            </div>
+           
+            <div class="product-item">
+               <img src="Pictures/ProductsImage/MOBO/MOBO2-removebg-preview.png" alt="ASUS PRIME B450M-A II AM4 Socket">
+                <h3>ASUS PRIME B450M-A II AM4 Socket</h3>
+                <a href =""><button>Buy Now for 4,499 Pesos</button></a>
+                </div>
+           
+           <div class="product-item">
+                <img src="Pictures/ProductsImage/MOBO/MOBO3-removebg-preview.png" alt="Gigabyte B650M Aorus Elite AX Ice DDR5">
+                <h3>Gigabyte B650M Aorus Elite AX Ice DDR5</h3>
+                <a href ="Description/mobo.html"><button>Buy Now for 13,599 Pesos</button></a>
+           </div>
+
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/MOBO/MOBO4-removebg-preview.png" alt="A320 Motherboard A320M HDV R4.0 Socket"> 
+                <h3>A320 Motherboard A320M HDV</h3>
+                <a href =""><button>Buy Now for 3,500 Pesos</button></a>
+           </div>
+       
+           <div class="product-item">
+               <img src="Pictures/ProductsImage/MOBO/MOBO5-removebg-preview.png" alt="Gigabyte H81M-DS2 Motherboard">
+               <h3>Gigabyte H81M-DS2 Motherboard</h3>
+               <a href =""><button>Buy Now for 2,799 Pesos</button></a>
+           </div>
+            </div>
+        </div>
+    </body>
+</html>
